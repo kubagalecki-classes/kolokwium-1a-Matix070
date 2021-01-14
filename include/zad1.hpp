@@ -1,8 +1,13 @@
 #include "catch.hpp"
 
 // Zad2
-// tutaj definicja klasy Makaron
-// BEZ definicji metody gotujMakaron (tylko z deklaracją)
+class Makaron 
+{
+public:
+	virtual double ileMaki(unsigned) const = 0;
+
+	static Makaron* gotujMakaron(const std::string& s);		
+};
 
 // Zad1
  class Tagliatelle : public Makaron
